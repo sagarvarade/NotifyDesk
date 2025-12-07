@@ -66,7 +66,7 @@
                         </goals>
                         <configuration>
                             <nodeVersion>${node.version}</nodeVersion>
-                            <npmVersion>${node.version}</npmVersion>
+                            <npmVersion>${npm.version}</npmVersion>
                             <workingDirectory>frontend</workingDirectory>
                         </configuration>
                     </execution>
@@ -101,14 +101,14 @@
                 <executions>
                     <execution>
                         <id>copy-resources</id>
-                        <phase>package</phase>
+                        <phase>process-resources</phase>
                         <goals>
                             <goal>run</goal>
                         </goals>
                         <configuration>
                             <target>
                                 <copy todir="${project.build.outputDirectory}/static">
-                                    <fileset dir="frontend/build"/>
+                                    <fileset dir="frontend/dist"/>
                                 </copy>
                             </target>
                         </configuration>

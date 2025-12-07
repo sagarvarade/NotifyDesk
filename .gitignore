@@ -66,7 +66,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
-
+frontend/node/
 # TypeScript v1 declaration files
 typings/
 
@@ -150,3 +150,7 @@ dist
 *.iml
 *.iws
 
+target/
+node/
+notifydesk-ui/frontend/node/
+npm/
