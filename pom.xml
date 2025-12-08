@@ -17,6 +17,7 @@
         <module>authentication-service</module>
         <module>notifydesk-ui</module>
         <module>notifydesk-app</module>
+        <module>naming-service</module>
     </modules>
 
     <properties>
